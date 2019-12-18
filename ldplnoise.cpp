@@ -27,7 +27,7 @@ void RL_ADD_HISTORY()
 
 void RL_ACCEPT() 
 {
-    if(RL_PROMPT.empty()) RL_PROMPT = "> ";
+    //if(RL_PROMPT.empty()) RL_PROMPT = "> ";
     linenoise::SetHistoryMaxLen(100);
     string input = RL_INPUT.str_rep();
     linenoise::Readline(CSTR(RL_PROMPT), input);
